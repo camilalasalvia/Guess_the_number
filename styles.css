@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-image: linear-gradient(to right, #c8eacc, #f6ffd1, #fff0ed);
+}
+
+#titleDiv {
+    width: 350px;
+    height: 350px;
+    margin: 40px 40px 0px 40px;
+    padding-left: 20px;
+    font-family: "Bowlby One", sans-serif;
+    font-size: 28px;
+    text-align: left;
+    color: rgb(31, 114, 214);
+}
+
+#reset {
+    width: 100px;
+    height: 55px;
+    border-radius: 10px;
+    border: 4px solid rgb(240, 183, 40);
+    background-color: rgb(253, 210, 101);
+    font-family: "Bowlby One", sans-serif;
+    font-size: 20px;
+    color: rgb(212, 28, 28);
+}
+
+#reset:hover {
+    cursor: pointer;
+    font-size: 21px;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+#inputDiv {
+    display:flex;
+    justify-content:flex-start;
+}
+
+input {
+    width: 80px;
+    height: 50px;
+    font-size: 35px;
+    padding-left: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(79, 79, 79);
+    border-radius: 10px;
+    border: 4px solid rgb(240, 183, 40);
+}
+
+input:focus {
+    outline: none;
+}
+
+#go {
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    border-radius: 50%;
+    border: 4px solid rgb(240, 183, 40);
+    background-color: rgb(253, 210, 101);
+    font-family: "Bowlby One", sans-serif;
+    font-size: 20px;
+    color: rgb(14, 161, 73);
+}
+
+#go:hover {
+    width: 64px;
+    height: 64px;
+    margin-left: 13px;
+    margin-top: -2px;
+    cursor: pointer;
+    font-size: 21px;
+}
+
+.modalBackground {
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(105, 105, 105, 0.33); 
+}
+
+.modalContent {
+    background-color: #d9edff;
+    margin: 15% auto;
+    padding: 10px;
+    width: 40%;
+    min-width: 400px;
+    max-width: 500px;
+    border-radius: 15px;
+    border: 5px solid rgb(31, 114, 214);
+    font-size: 25px;
+    text-align: right;
+}
+
+.errorMessage {
+    background-color: rgb(255, 230, 230);
+    color: rgb(212, 28, 28);
+    border: 5px solid rgb(212, 28, 28);
+}
+
+.successMessage {
+    background-color: rgb(231, 255, 234);
+    color: rgb(14, 161, 73);
+    border: 5px solid rgb(14, 161, 73);
+}
+
+span {
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 23px;
+    padding-bottom: 20px;
+}
+
+#numbersDiv {
+    width: 400px;
+    height: 600px; 
+    margin: 40px 40px 40px 40px;
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    border: 3px dashed rgb(128, 128, 128);
+    border-radius: 50px;
+}
+
+.circleLine {
+    width: 270px;
+    height: 110px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.disabledCircle {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(237, 237, 237);
+    border: 4px solid #9c9c9c;
+    color: rgb(79, 79, 79);
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.initialCircle {
+    background-color: rgb(234, 243, 255);
+    border: 4px solid #5486d2;
+    transition: all 0.3s ease-in;
+}
+
+.redCircle {
+    background-color: rgb(255, 205, 205);
+    border: 4px solid rgb(212, 28, 28);
+    transition: all 0.3s ease-in;
+}
+
+.greenCircle {
+    background-color: rgb(210, 255, 215);
+    border: 4px solid rgb(14, 161, 73);
+    transition: all 0.3s ease-in;
+}
+
+.arrowStart{
+    width: 0;
+    height: 0;
+    margin-left: 15px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+
+.arrowUp { 
+    border-bottom: 23px solid rgb(212, 28, 28);
+}
+
+.arrowDown {
+    border-top: 23px solid rgb(212, 28, 28);
+}
+
+.pointerStart {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.pointer {
+    border-left: 18px solid rgb(74, 74, 74);
+}
